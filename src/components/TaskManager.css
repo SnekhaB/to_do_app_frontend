@@ -46,7 +46,13 @@ body{
   outline: none;
   font-size: 1rem;
   background-color: transparent;
-  font-weight: bold;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+
+}
+
+input::placeholder{
+    font-weight: bold
 }
 
 
