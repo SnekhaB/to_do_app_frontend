@@ -1,12 +1,73 @@
-# React + Vite
+# ✅ To-Do App Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** for a simple and interactive To-Do List application built using **React + Vite**. It allows users to add, update, and delete tasks by communicating with a RESTful backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+https://to-do-app-frontend-mood.onrender.com/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- Add, update, and delete tasks
+- Mark tasks as completed
+- Responsive and user-friendly interface
+- Communicates with a Flask backend API
+- Toast notifications for task actions
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React (with Vite)
+- **Styling**: CSS3
+- **Notifications**: react-toastify
+- **HTTP Requests**: Fetch API
+- **Deployment**: Render
+
+---
+
+## 📁 Project Structure
+to_do_app_frontend\
+├── public\
+├── src\
+│ ├── components\
+│ │ ├── TaskForm.jsx\
+│ │ ├── TaskList.jsx\
+│ │ └── TaskManager.jsx\
+│ ├── App.jsx\
+│ ├── main.jsx\
+│ └── styles\
+│ └── TaskManager.css\
+├── .gitignore\
+├── index.html\
+├── package.json\
+├── vite.config.js\
+└── README.md
+
+---
+
+## 🔌 API Integration
+- GET /tasks → Fetch all tasks
+- POST /tasks → Add a task
+- PATCH /tasks/:id → Update task status
+- DELETE /tasks/:id → Remove task
+
+---
+## 🚀 Deployment (Vite + Render)
+1.Build the project
+```bash
+npm run build
+```
+2.Deploy the dist folder to Render
+  - In Render:
+  - Select “Static Site”
+  - Set:
+    - Build Command: npm run build
+    - Publish directory: dist
+
+
+
